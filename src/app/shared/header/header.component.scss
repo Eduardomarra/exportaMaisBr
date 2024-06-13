@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10rem;
+  background-color: var(--blue-800);
+  padding: 1rem 2rem;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .image-logo {
+      width: 9rem;
+      height: 9rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3 {
+      font-size: var(--fontSize-xxlarge);
+      line-height: var(--line-xxlarge);
+      color: var(--gray);
+      font-weight: 400;
+    }
+  }
+
+  .user-control {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .notification {
+      position: relative;
+      .faBell {
+        color: white;
+      }
+      span {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        font-weight: 600;
+        text-align: center;
+        background: var(--yellow-100);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .photo-user {
+        width: 7rem;
+        height: 7rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        span {
+          font-size: var(--fontSize-small);
+          line-height: var(--line-small);
+          color: var(--white);
+        }
+
+        .btn-edit-profile {
+          text-transform: uppercase;
+          background-color: var(--white);
+          border: none;
+          border-radius: 3px;
+          width: 100%;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
