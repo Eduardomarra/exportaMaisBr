@@ -1,0 +1,35 @@
+<div class="container">
+  <nav class="navigate-link">
+    <ul>
+      <li
+        class="dashboard"
+        (click)="dashboardNav()"
+        [ngClass]="{ active: dashboard }"
+      >
+        <fa-icon [icon]="faHouse" size="2x" class="faHouse"> </fa-icon>
+        <span>Dashboard</span>
+      </li>
+      <li class="data" (click)="dataNav()" [ngClass]="{ active: data }">
+        <fa-icon [icon]="faBriefcase" size="2x" class="faBriefcase"> </fa-icon>
+        <span>Dados</span>
+      </li>
+      <li
+        class="first-steps"
+        (click)="stepsNav()"
+        [ngClass]="{ active: firstSteps }"
+      >
+        <fa-icon [icon]="faCalendar" size="2x" class="faCalendar"> </fa-icon>
+        <span>Primeiros <br />Passos</span>
+      </li>
+    </ul>
+  </nav>
+  <div class="checkout">
+    <fa-icon
+      [icon]="faArrowRightFromBracket"
+      size="2x"
+      class="faArrowRightFromBracket"
+    >
+    </fa-icon>
+    <span>Sair</span>
+  </div>
+</div>

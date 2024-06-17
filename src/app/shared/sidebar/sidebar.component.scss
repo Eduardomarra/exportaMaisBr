@@ -1,0 +1,107 @@
+.container {
+  width: 13rem;
+  height: calc(100vh - 10rem);
+  background: var(--blue-800);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+
+  .navigate-link {
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      color: var(--white);
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        span {
+          font-size: var(--fontSize-small);
+          letter-spacing: 1px;
+        }
+      }
+
+      .dashboard,
+      .data,
+      .first-steps {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        height: 5.5rem;
+        cursor: pointer;
+      }
+
+      .dashboard.active::after,
+      .dashboard.active::before,
+      .data.active::after,
+      .data.active::before,
+      .first-steps.active::after,
+      .first-steps.active::before {
+        width: 8px;
+        height: 100%;
+        content: " ";
+        background-color: var(--yellow);
+      }
+
+      .dashboard::after,
+      .data::after,
+      .first-steps::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 3px 0px 0px 3px;
+        animation: fadeIn 2s forwards;
+      }
+      .dashboard::before,
+      .data::before,
+      .first-steps::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 0px 3px 3px 0px;
+        animation: fadeIn 2s forwards;
+      }
+    }
+  }
+
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--white);
+    cursor: pointer;
+
+    span {
+      font-size: var(--fontSize-small);
+      letter-spacing: 1px;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

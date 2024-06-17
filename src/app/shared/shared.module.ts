@@ -6,11 +6,12 @@ import {
   FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, SidebarComponent],
   imports: [CommonModule, FontAwesomeModule],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent, SidebarComponent],
 })
 export class SharedModule {
   constructor(library: FaIconLibrary) {
