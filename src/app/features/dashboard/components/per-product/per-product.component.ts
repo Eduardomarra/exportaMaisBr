@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart } from 'chart.js';
+import { Chart, registerables } from 'node_modules/chart.js';
+
+Chart.register(...registerables);
 
 @Component({
   selector: 'app-per-product',
@@ -9,5 +11,34 @@ import { Chart } from 'chart.js';
 export class PerProductComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.renderChart();
+  }
+
+  renderChart() {
+    const myChart = new Chart('piechart', {
+      type: 'bar',
+      data: {
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        datasets: [
+          {
+            label: 'Madeira',
+            data: [
+              50000, 80000, 90000, 100000, 40000, 150000, 50000, 80000, 90000,
+              100000, 40000, 150000,
+            ],
+            backgroundColor: ['#7897ff'],
+            borderWidth: 0,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  }
 }
