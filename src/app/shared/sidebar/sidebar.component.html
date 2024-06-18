@@ -3,27 +3,27 @@
     <ul>
       <li
         class="dashboard"
-        (click)="dashboardNav()"
+        (click)="dashboardNav($event)"
         [ngClass]="{ active: dashboard }"
-        routerLink="/dashboard"
+        routerLink="dashboard"
       >
         <fa-icon [icon]="faHouse" size="2x" class="faHouse"> </fa-icon>
         <span>Dashboard</span>
       </li>
       <li
         class="data"
-        (click)="dataNav()"
+        (click)="dataNav($event)"
         [ngClass]="{ active: data }"
-        routerLink="/data"
+        routerLink="data"
       >
         <fa-icon [icon]="faBriefcase" size="2x" class="faBriefcase"> </fa-icon>
         <span>Dados</span>
       </li>
       <li
         class="first-steps"
-        (click)="stepsNav()"
+        (click)="stepsNav($event)"
         [ngClass]="{ active: firstSteps }"
-        routerLink="/steps"
+        routerLink="steps"
       >
         <fa-icon [icon]="faCalendar" size="2x" class="faCalendar"> </fa-icon>
         <span>Primeiros <br />Passos</span>

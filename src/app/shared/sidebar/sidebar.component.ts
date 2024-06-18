@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   faHouse,
   faBriefcase,
@@ -12,7 +13,7 @@ import {
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -25,21 +26,24 @@ export class SidebarComponent implements OnInit {
   data: boolean = false;
   firstSteps: boolean = false;
 
-  dashboardNav() {
+  dashboardNav(event: Event) {
+    event.stopPropagation();
     if (this.data == true || this.firstSteps == true) {
       this.data = false;
       this.firstSteps = false;
     }
     this.dashboard = true;
   }
-  dataNav() {
+  dataNav(event: Event) {
+    event.stopPropagation();
     if (this.dashboard == true || this.firstSteps == true) {
       this.dashboard = false;
       this.firstSteps = false;
     }
     this.data = true;
   }
-  stepsNav() {
+  stepsNav(event: Event) {
+    event.stopPropagation();
     if (this.data == true || this.dashboard == true) {
       this.data = false;
       this.dashboard = false;
