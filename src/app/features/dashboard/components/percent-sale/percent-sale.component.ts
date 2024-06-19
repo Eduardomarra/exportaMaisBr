@@ -19,12 +19,12 @@ export class PercentSaleComponent implements OnInit {
     const myChart = new Chart('doughnut', {
       type: 'doughnut',
       data: {
-        labels: ['Madeira', 'Carne', 'Milho', 'Arroz'],
+        labels: ['Madeira', 'Carne', 'Milho'],
         datasets: [
           {
             label: 'Madeira',
-            data: [50000, 80000, 90000, 100000],
-            backgroundColor: ['#7897ff', '#96adff', '#6284fd', '#2d5bff'],
+            data: [50000, 80000, 90000],
+            backgroundColor: ['#7897ff', '#6284fd', '#2d5bff'],
             borderWidth: 0,
           },
         ],
