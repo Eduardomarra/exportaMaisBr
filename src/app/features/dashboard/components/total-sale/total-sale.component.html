@@ -1,6 +1,32 @@
-<div>
-  <div>
-    <h2>Total de venda</h2>
-    <canvas id="line" width="440" height="340"></canvas>
+<div class="container">
+  <div class="title">
+    <h2>Total de vendas</h2>
+    <div class="input-date">
+      <div>
+        <input type="date" name="initialDate" id="initial-date" />
+      </div>
+      <div>
+        <input type="date" name="finalDate" id="final-date" />
+      </div>
+    </div>
+  </div>
+  <div class="grafic-sale">
+    <div class="sidebar">
+      <div class="card">
+        <span>China</span>
+        <h2>US$ 7.9B</h2>
+      </div>
+      <div class="card small">
+        <span>China</span>
+        <h2>US$ 7.9B</h2>
+      </div>
+      <div class="card small">
+        <span>China</span>
+        <h2>US$ 7.9B</h2>
+      </div>
+    </div>
+    <div class="chart-bar">
+      <canvas id="line"></canvas>
+    </div>
   </div>
 </div>

@@ -23,11 +23,14 @@ export class TotalSaleComponent implements OnInit {
         datasets: [
           {
             label: 'Madeira',
-            data: [50000, 80000, 90000, 100000, 50000, 80000, 90000, 100000],
+            data: [
+              100000000, 800000000, 900000000, 1000000000, 500000000, 800000000,
+              900000000, 1000000000,
+            ],
             fill: false,
             backgroundColor: ['#7897ff'],
             borderColor: '#7897ff',
-            tension: 0.1,
+            tension: 0.5,
           },
         ],
       },
@@ -38,6 +41,7 @@ export class TotalSaleComponent implements OnInit {
             display: false,
           },
         },
+        indexAxis: 'x',
         plugins: {
           legend: {
             display: false,
