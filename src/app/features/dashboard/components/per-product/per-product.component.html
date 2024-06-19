@@ -1,6 +1,26 @@
-<div>
-  <div>
+<div class="container shadow-container">
+  <div class="title">
     <h2>Faturamento por produto</h2>
-    <canvas id="piechart" width="440" height="340"></canvas>
+    <select id="">
+      <option value="madeira" selected>Madeira</option>
+      <option value="milho">Milho</option>
+      <option value="ferro">Ferro</option>
+      <option value="acucar">Açúcar</option>
+    </select>
+  </div>
+  <div class="chart-pie">
+    <div class="grafic-product">
+      <canvas id="piechart" width="440" height="340"></canvas>
+    </div>
+    <div class="products">
+      <div class="card-product">
+        <span>Milho</span>
+        <span>R$ 100,00</span>
+      </div>
+      <div class="card-product">
+        <span>Carne bovina</span>
+        <span>R$ 100,00</span>
+      </div>
+    </div>
   </div>
 </div>
