@@ -47,6 +47,8 @@ export class TotalSaleComponent implements OnInit {
             display: false,
           },
         },
+        responsive: true,
+        maintainAspectRatio: false,
       },
     });
   }

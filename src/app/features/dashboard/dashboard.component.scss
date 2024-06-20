@@ -3,31 +3,27 @@
   width: 100%;
 
   .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 125px 80%;
+    gap: 2rem;
     width: 100%;
 
     .dashboard {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 100%;
+      place-items: center;
       gap: 2rem;
 
       .dashboard-chart {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
+        display: grid;
         gap: 1rem;
         width: 100%;
 
         .chart-products {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 2rem;
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 1rem;
         }
 
         .ranking {
