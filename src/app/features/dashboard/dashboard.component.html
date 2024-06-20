@@ -1,11 +1,18 @@
-<app-header></app-header>
 <div class="container">
-  <app-sidebar></app-sidebar>
-  <div>
-    <app-percent-sale></app-percent-sale>
-    <!--
-      <app-total-sale></app-total-sale>
-      <app-per-product></app-per-product>
-    <app-ranking></app-ranking>-->
+  <app-header></app-header>
+  <div class="wrapper">
+    <app-sidebar></app-sidebar>
+    <div class="dashboard">
+      <div class="dashboard-chart">
+        <app-total-sale></app-total-sale>
+        <div class="chart-products">
+          <app-per-product></app-per-product>
+          <app-percent-sale></app-percent-sale>
+        </div>
+      </div>
+      <div class="ranking">
+        <app-ranking></app-ranking>
+      </div>
+    </div>
   </div>
 </div>
