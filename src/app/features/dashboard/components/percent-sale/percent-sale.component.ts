@@ -41,6 +41,8 @@ export class PercentSaleComponent implements OnInit {
             display: false,
           },
         },
+        responsive: true,
+        maintainAspectRatio: false,
       },
     });
   }

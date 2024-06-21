@@ -51,6 +51,8 @@ export class PerProductComponent implements OnInit {
             },
           },
         },
+        responsive: true,
+        maintainAspectRatio: false,
       },
     });
   }

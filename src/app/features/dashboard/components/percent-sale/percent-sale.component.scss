@@ -1,19 +1,14 @@
 .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 2fr;
   gap: 2rem;
   padding: 1rem 0.5rem;
-  min-width: 30rem;
-  min-height: 31rem;
 
   .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    width: 100%;
 
     h2 {
       font-size: var(--fontSize-large);
@@ -35,11 +30,13 @@
 
   .chart-doughnut {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    width: 100%;
+    gap: 2rem;
 
     .grafic-doughnut {
+      height: 100%;
+      width: 100%;
     }
 
     .products {

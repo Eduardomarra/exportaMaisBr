@@ -1,12 +1,7 @@
 .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
   gap: 2rem;
   padding: 1rem 0.5rem;
-  min-width: 30rem;
-  min-height: 30rem;
 
   .title {
     display: flex;
@@ -34,14 +29,14 @@
   }
 
   .chart-pie {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+
+    gap: 1rem;
     width: 100%;
 
     .grafic-product {
-      height: auto;
+      height: 100%;
     }
 
     .products {
