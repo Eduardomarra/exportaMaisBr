@@ -27,27 +27,24 @@ export class SidebarComponent implements OnInit {
   firstSteps: boolean = false;
 
   dashboardNav(event: Event) {
-    event.stopPropagation();
     if (this.data == true || this.firstSteps == true) {
       this.data = false;
       this.firstSteps = false;
+      this.dashboard = true;
     }
-    this.dashboard = true;
   }
   dataNav(event: Event) {
-    event.stopPropagation();
     if (this.dashboard == true || this.firstSteps == true) {
       this.dashboard = false;
       this.firstSteps = false;
+      this.data = true;
     }
-    this.data = true;
   }
   stepsNav(event: Event) {
-    event.stopPropagation();
     if (this.data == true || this.dashboard == true) {
       this.data = false;
       this.dashboard = false;
+      this.firstSteps = true;
     }
-    this.firstSteps = true;
   }
 }
