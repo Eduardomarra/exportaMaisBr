@@ -53,6 +53,12 @@
   font-family: var(--family-body);
 }
 
+app-root {
+  display: block;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
 html {
   font-size: 62.5%;
 }

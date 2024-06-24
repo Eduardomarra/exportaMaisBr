@@ -1,7 +1,5 @@
 .container {
-  display: grid;
-  gap: 2rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
 
   .title {
     display: flex;
@@ -9,6 +7,7 @@
     justify-content: space-between;
     gap: 0.5rem;
     width: 100%;
+    margin-bottom: 2rem;
 
     h2 {
       font-size: var(--fontSize-large);
@@ -29,8 +28,8 @@
   }
 
   .chart-pie {
-    display: grid;
-    grid-template-rows: 5fr 1fr;
+    display: flex;
+    flex-direction: column;
 
     gap: 1rem;
     width: 100%;

@@ -1,14 +1,12 @@
 .container {
-  display: grid;
-  grid-template-rows: auto 2fr;
-  gap: 2rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
 
   .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    margin-bottom: 2rem;
 
     h2 {
       font-size: var(--fontSize-large);
@@ -32,6 +30,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-direction: column;
     gap: 2rem;
 
     .grafic-doughnut {
@@ -42,7 +41,7 @@
     .products {
       display: flex;
       align-items: center;
-      flex-direction: column;
+      justify-content: space-between;
       gap: 1rem;
       width: 100%;
       padding-left: 1rem;
@@ -76,19 +75,19 @@
           color: var(--black);
         }
       }
+    }
+    .view-more {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 0.5rem;
 
-      .view-more {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 100%;
-        cursor: pointer;
-
-        a {
-          font-size: var(--fontSize-small);
-          letter-spacing: 1px;
-          color: var(--blue-700);
-        }
+      a {
+        font-size: var(--fontSize-small);
+        letter-spacing: 1px;
+        color: var(--blue-700);
       }
     }
   }
