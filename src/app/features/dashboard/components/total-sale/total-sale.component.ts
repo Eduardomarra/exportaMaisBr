@@ -29,8 +29,8 @@ export class TotalSaleComponent implements OnInit {
               50000000, 50000000,
             ],
             fill: false,
-            backgroundColor: ['#7897ff'],
-            borderColor: '#7897ff',
+            backgroundColor: ['#bc0f0f'],
+            borderColor: '#bc0f0f',
             tension: 0.5,
           },
           {
@@ -40,8 +40,8 @@ export class TotalSaleComponent implements OnInit {
               80000000, 80000000,
             ],
             fill: false,
-            backgroundColor: ['#7897ff'],
-            borderColor: '#7897ff',
+            backgroundColor: ['#2cc369'],
+            borderColor: '#2cc369',
             tension: 0.5,
           },
           {
@@ -51,8 +51,8 @@ export class TotalSaleComponent implements OnInit {
               30000000, 30000000,
             ],
             fill: false,
-            backgroundColor: ['#7897ff'],
-            borderColor: '#7897ff',
+            backgroundColor: ['#dda82a'],
+            borderColor: '#dda82a',
             tension: 0.5,
           },
           {
