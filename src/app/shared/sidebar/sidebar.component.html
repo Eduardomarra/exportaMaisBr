@@ -4,9 +4,9 @@
       <li
         click-stop-propagation
         class="dashboard"
-        (click)="dashboardNav($event)"
         [ngClass]="{ active: dashboard }"
-        [routerLink]="'/dashboard'"
+        routerLink="/dashboard"
+        routerLinkActive="active"
       >
         <fa-icon [icon]="faHouse" size="2x" class="faHouse"> </fa-icon>
         <span>Dashboard</span>
@@ -14,9 +14,9 @@
       <li
         click-stop-propagation
         class="data"
-        (click)="dataNav($event)"
         [ngClass]="{ active: data }"
-        [routerLink]="'/data'"
+        routerLink="/data"
+        routerLinkActive="active"
       >
         <fa-icon [icon]="faBriefcase" size="2x" class="faBriefcase"> </fa-icon>
         <span>Dados</span>
@@ -24,9 +24,9 @@
       <li
         click-stop-propagation
         class="first-steps"
-        (click)="stepsNav($event)"
         [ngClass]="{ active: firstSteps }"
-        [routerLink]="'/steps'"
+        routerLink="/steps"
+        routerLinkActive="active"
       >
         <fa-icon [icon]="faCalendar" size="2x" class="faCalendar"> </fa-icon>
         <span>Primeiros <br />Passos</span>
