@@ -7,6 +7,7 @@ import { TotalSaleComponent } from './dashboard/components/total-sale/total-sale
 import { RankingComponent } from './dashboard/components/ranking/ranking.component';
 import { SharedModule } from '../shared/shared.module';
 import { DadosComponent } from './dados/dados.component';
+import { StepsComponent } from './steps/steps.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { DadosComponent } from './dados/dados.component';
     TotalSaleComponent,
     RankingComponent,
     DadosComponent,
+    StepsComponent,
   ],
   imports: [CommonModule, SharedModule],
   exports: [DashboardComponent],
