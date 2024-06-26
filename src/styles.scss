@@ -23,7 +23,10 @@
   --red: #db2d0691;
   --red-100: #bc0f0f;
   --green: #2cc369;
+  --green-100: #c4ffd1;
+  --green-200: #00a324;
 
+  --fontSize-smaller: 1rem;
   --fontSize-small: 1.4rem;
   --fontSize-medium: 1.6rem;
   --fontSize-large: 1.8rem;
@@ -55,8 +58,9 @@
 
 app-root {
   display: block;
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 html {
