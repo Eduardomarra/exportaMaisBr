@@ -8,6 +8,9 @@ import { RankingComponent } from './dashboard/components/ranking/ranking.compone
 import { SharedModule } from '../shared/shared.module';
 import { DadosComponent } from './dados/dados.component';
 import { StepsComponent } from './steps/steps.component';
+import { ProductsComponent } from './dados/components/products/products.component';
+import { PercentsComponent } from './dados/components/percents/percents.component';
+import { CountriesComponent } from './dados/components/countries/countries.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { StepsComponent } from './steps/steps.component';
     RankingComponent,
     DadosComponent,
     StepsComponent,
+    ProductsComponent,
+    PercentsComponent,
+    CountriesComponent,
   ],
   imports: [CommonModule, SharedModule],
   exports: [DashboardComponent],
