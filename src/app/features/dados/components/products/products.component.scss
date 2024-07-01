@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+
+  h1 {
+    font-size: var(--fontSize-xxlarge);
+    line-height: var(--line-xxlarge);
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .cards {
+    width: 100%;
+    height: calc(100vh - 320px);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    overflow: scroll;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #0000002e, -2px -2px 10px #0000002e;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border-radius: 5px;
+      padding: 2rem 1rem;
+      box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1),
+        -2px 2px 10px rgba(0, 0, 0, 0.1);
+
+      .product {
+        p {
+          font-size: var(--fontSize-small);
+          line-height: var(--line-small);
+          font-weight: bold;
+        }
+      }
+
+      .percent,
+      .total {
+        font-size: var(--fontSize-small);
+        line-height: var(--line-small);
+
+        span {
+          font-size: var(--fontSize-smaller);
+          line-height: var(--line-smaller);
+          color: var(--gray);
+        }
+      }
+    }
+  }
+}
