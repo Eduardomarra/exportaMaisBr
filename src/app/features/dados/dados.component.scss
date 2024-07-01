@@ -15,8 +15,9 @@ app-sidebar {
 }
 main {
   display: grid;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: auto 1fr;
   padding: 1rem;
+  height: calc(100vh - 90px);
 
   div {
     display: block;
@@ -28,7 +29,7 @@ main {
     align-items: flex-start;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem 1rem 0rem 4rem;
+    padding: 1rem 1rem 1rem 4rem;
 
     h2 {
       font-size: var(--fontSize-xlarge);
