@@ -9,10 +9,11 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { StopPropagationDirective } from './directive/stop-propagation.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [HeaderComponent, SidebarComponent, StopPropagationDirective],
-  imports: [CommonModule, FontAwesomeModule, RouterModule],
+  imports: [CommonModule, FontAwesomeModule, RouterModule, HttpClientModule],
   exports: [HeaderComponent, SidebarComponent],
 })
 export class SharedModule {

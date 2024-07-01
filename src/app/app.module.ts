@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeaturesModule } from './features/features.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
     FeaturesModule,
     FontAwesomeModule,
     RouterModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
