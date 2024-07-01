@@ -57,13 +57,17 @@
 }
 
 app-root {
-  min-height: 100vh;
+  max-height: 100vh;
   max-width: 100vw;
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 a {
